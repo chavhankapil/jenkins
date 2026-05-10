@@ -26,7 +26,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                sh 'docker build -t kapilchavhan56/helloworld:latest .'
+                sh 'docker build -t chavhankapil56/helloworld:latest .'
             }
         }
 
@@ -45,7 +45,7 @@ pipeline {
                     sh '''
                     echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
 
-                    docker push kapilchavhan56/helloworld:latest
+                    docker push chavhankapil56/helloworld:latest
                     '''
                 }
             }
@@ -60,7 +60,7 @@ pipeline {
 
                 docker run -d \
                 --name helloworld_container \
-                kapilchavhan56/helloworld:latest
+                chavhankapil56/helloworld:latest
                 '''
             }
         }
