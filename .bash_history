@@ -46,3 +46,35 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 sudo systemctl enable jenkins
 sudo yum install python3 -y
+clear
+sudo apt update
+sudo apt install python3 -y
+sh 'python --version'
+cat /etc/os-release
+sudo apt update
+sudo apt install python3 -y
+sudo yum update -y
+sudo yum install python3 -y
+python --version
+sudo dnf install python3 -y
+sudo ln -s /usr/bin/python3 /usr/bin/python
+python --version
+git commit -m "Added Jenkins pipeline project"
+echo "*.pem" >> .gitignore
+git rm --cached jenkin.pem.pem
+git rm --cached jenkins1.pem
+git add .
+git commit -m "Removed PEM files"
+git push origin main
+*.pem
+__pycache__/
+.env
+git --version
+cd flask-docker-jenkins
+git commit -m "First commit"
+ls
+ls 
+ls -l
+git init
+git add .
+git commit -m "First commit"
